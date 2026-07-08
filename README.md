@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  
+  <img src="./public/wde-logo-3.png" alt="WDE Logo" width="280" style="margin-bottom: 20px;" />
 
-## Getting Started
+  # Wedding Documentary Events
+  
+  *Real moments. Honest frames. Cinematic wedding storytelling from first look to last dance.*
 
-First, run the development server:
+  [![Next.js](https://img.shields.io/badge/Next.js-16.2-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+  [![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4.0-38BDF8?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+  [![Framer Motion](https://img.shields.io/badge/Framer_Motion-v12.0-FF007F?style=for-the-badge&logo=framer-motion)](https://www.framer.com/motion/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-v5.0-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 
+</div>
+
+---
+
+## 📖 Overview
+
+**Wedding Documentary Events (WDE)** is a premium, cinematic, editorial-style portfolio and booking site designed for high-end wedding films and fine-art documentary photography. 
+
+The site fuses minimalist editorial design with modern front-end physics to create a tactile, luxury user experience that guides couples seamlessly from philosophy to pricing packages, galleries, and custom live inquiry pipelines.
+
+---
+
+## ✨ Features & Interactivity
+
+The platform is packed with state-of-the-art interactive and technical features:
+
+- **Local Rankings:** Embedded JSON-LD structured data (`LocalBusiness` Schema) targets search engines to rank WDE for local searches, matching top wedding agencies.
+- **Image optimization:** Configured custom responsive `sizes` values across all Next.js `<Image>` tags to prevent mobile layouts from loading massive desktop assets.
+
+---
+
+## 🛠️ Tech Stack & Setup
+
+- **Framework:** Next.js 16 (App Router)
+- **Styling:** Tailwind CSS v4 (via `@tailwindcss/postcss` plugin)
+- **Animation:** Framer Motion
+- **Scroll Engine:** Lenis Smooth Scroll
+- **Typography:** Playfair Display (Headings) & Inter (Body)
+
+### Getting Started
+
+Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run the local development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Key Scripts
 
-## Learn More
+| Command | Action |
+| --- | --- |
+| `npm run dev` | Spins up local dev hot-reloading server |
+| `npm run build` | Builds optimized production bundle |
+| `npm run start` | Serves production build |
+| `npm run lint` | Runs ESLint check across all routes |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📂 Codebase Highlights
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*   `app/template.tsx`: Orchestrates the conditional 3D flip / full cinematic loading transition.
+*   `components/WhatsAppWidget.tsx`: Renders the customized interactive chat drawer with Framer Motion triggers.
+*   `components/Magnetic.tsx`: Houses the mouse coordinates spring physics engine.
