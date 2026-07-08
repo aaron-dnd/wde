@@ -1,0 +1,56 @@
+import Link from "next/link";
+import { navLinks } from "@/lib/data";
+
+export default function Footer() {
+  return (
+    <footer id="contact" className="bg-ink border-t border-cream/10 py-16">
+      <div className="container-wide flex flex-col md:flex-row justify-between gap-10">
+        <div>
+          <h3 className="font-display text-2xl text-cream mb-2">
+            Wedding Documentary Events
+          </h3>
+          <p className="text-stone text-sm max-w-xs">
+            Cinematic wedding films & fine-art photography, documenting real
+            love as it actually happens.
+          </p>
+        </div>
+
+        <div className="flex gap-16">
+          <div>
+            <p className="text-xs tracking-widest2 uppercase text-rose mb-4">
+              Navigate
+            </p>
+            <ul className="space-y-2">
+              {navLinks.map((l) => (
+                <li key={l.href}>
+                  <Link
+                    href={l.href}
+                    className="text-cream/70 text-sm hover:text-cream transition-colors"
+                  >
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <p className="text-xs tracking-widest2 uppercase text-rose mb-4">
+              Contact
+            </p>
+            <ul className="space-y-2 text-sm text-cream/70">
+              <li>hello@weddingdocumentaryevents.com</li>
+              <li>+91 90000 00000</li>
+              <li>Bengaluru, Karnataka</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="container-wide mt-12 pt-6 border-t border-cream/10 text-xs text-stone flex justify-between">
+        <span>© {new Date().getFullYear()} Wedding Documentary Events</span>
+        <span>All love, honestly told.</span>
+      </div>
+    </footer>
+  );
+}
