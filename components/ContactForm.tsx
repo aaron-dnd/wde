@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Magnetic from "./Magnetic";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "submitting" | "success">(
@@ -70,13 +71,15 @@ export default function ContactForm() {
         />
       </div>
 
-      <button
-        type="submit"
-        disabled={status === "submitting"}
-        className="bg-rose text-ink px-10 py-4 text-xs tracking-widest2 uppercase hover:bg-cream transition-colors disabled:opacity-50"
-      >
-        {status === "submitting" ? "Sending..." : "Submit Enquiry"}
-      </button>
+      <Magnetic strength={20}>
+        <button
+          type="submit"
+          disabled={status === "submitting"}
+          className="bg-rose text-ink px-10 py-4 text-xs tracking-widest2 uppercase hover:bg-cream transition-colors disabled:opacity-50"
+        >
+          {status === "submitting" ? "Sending..." : "Submit Enquiry"}
+        </button>
+      </Magnetic>
     </form>
   );
 }
