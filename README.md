@@ -1,6 +1,6 @@
 <div align="center">
   
-  <img src="./public/wde-logo-3.png" alt="WDE Logo" width="280" style="margin-bottom: 20px;" />
+  <img src="./public/wde-logo-2.png" alt="WDE Logo" width="280" style="margin-bottom: 20px;" />
 
   # Wedding Documentary Events
   
