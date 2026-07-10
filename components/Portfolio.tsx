@@ -19,11 +19,11 @@ export default function Portfolio() {
               Real weddings, real families, real moments
             </h2>
           </div>
-          <Link
+           <Link
             href="/portfolio"
             className="text-xs tracking-widest2 uppercase border-b border-ink pb-1 hover:text-rose hover:border-rose transition-colors"
           >
-            View all films
+            View all work
           </Link>
         </div>
 
