@@ -4,14 +4,14 @@ import { navLinks } from "@/lib/data";
 export default function Footer() {
   return (
     <footer id="contact" className="bg-ink border-t border-cream/10 py-16">
-      <div className="container-wide flex flex-col md:flex-row justify-between gap-10">
+      <div className="container-wide flex flex-col sm:flex-row justify-between gap-10 sm:gap-16">
         <div>
           <h3 className="font-display text-2xl text-cream mb-2">
             Wedding Documentary Events
           </h3>
           <p className="text-stone text-sm max-w-xs">
-            Cinematic wedding films & fine-art photography, documenting real
-            love as it actually happens.
+            Décor and event styling for weddings and every celebration in
+            between, built around the details that make a day unforgettable.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ export default function Footer() {
 
       <div className="container-wide mt-12 pt-6 border-t border-cream/10 text-xs text-stone flex justify-between">
         <span>© {new Date().getFullYear()} Wedding Documentary Events</span>
-        <span>All love, honestly told.</span>
+        <span>Every celebration, styled with intention.</span>
       </div>
     </footer>
   );

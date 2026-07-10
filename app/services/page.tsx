@@ -8,10 +8,10 @@ export default function ServicesPage() {
       <section className="container-wide pb-16">
         <p className="section-label mb-4">
           <span className="eyebrow-line" />
-          Coverage
+          What We Do
         </p>
         <h1 className="font-display text-4xl md:text-6xl text-cream max-w-3xl">
-          Full-wedding documentation, from haldi to the last dance
+          Décor and event production, from haldi to the last dance
         </h1>
       </section>
       <Services />

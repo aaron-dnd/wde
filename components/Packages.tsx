@@ -13,12 +13,13 @@ export default function Packages() {
           <span className="eyebrow-line" />
           Packages
         </p>
-        <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-cream max-w-2xl mb-4">
-          Coverage built around your events, not a fixed template
+        <h2 className="font-display text-3xl sm:text-4xl md:text-6xl text-cream max-w-3xl mb-4">
+          Décor packages, built around your celebration
         </h2>
         <p className="text-stone max-w-xl mb-12 md:mb-16 text-sm sm:text-base">
-          Every wedding is different — these are starting points. Tell us
-          your functions and guest count and we&apos;ll tailor a proposal.
+         Every family&apos;s needs are different. Share your functions, guest
+          count, and vision with us, and we&apos;ll walk you through the right
+          package and pricing in person.
         </p>
 
         {/* Mobile: horizontal snap scroll. lg+: full grid */}
@@ -57,18 +58,18 @@ export default function Packages() {
                 className="h-1 w-10 mb-5"
                 style={{ backgroundColor: pkg.accent }}
               />
-              <h3 className="font-display text-2xl text-cream mb-1">
+              <span
+                className="text-[10px] tracking-widest2 uppercase mb-2 block"
+                style={{ color: pkg.accent }}
+              >
+                {pkg.scope}
+              </span>
+              <h3 className="font-display text-2xl text-cream mb-2">
                 {pkg.tier}
               </h3>
-              <p className="text-stone text-xs mb-4">{pkg.tagline}</p>
-              <p className="font-display text-3xl text-cream mb-6">
-                {pkg.price}
-                <span className="text-stone text-sm font-body">
-                  {" "}
-                  onwards
-                </span>
+              <p className="text-stone text-sm mb-6 leading-snug">
+                {pkg.bestFor}
               </p>
-
               <ul className="space-y-3 mb-8 flex-1">
                 {pkg.features.map((f) => (
                   <li
@@ -85,11 +86,11 @@ export default function Packages() {
                 ))}
               </ul>
 
-              <Link
+             <Link
                 href="/contact"
                 className="text-center text-xs tracking-widest2 uppercase border border-cream/30 py-3 hover:border-rose hover:text-rose transition-colors"
               >
-                Enquire
+                Get a Quote
               </Link>
             </motion.div>
           ))}

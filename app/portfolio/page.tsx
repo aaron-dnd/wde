@@ -7,10 +7,10 @@ export default function PortfolioPage() {
       <section className="container-wide pb-16">
         <p className="section-label mb-4">
           <span className="eyebrow-line" />
-          Films
+             Our Work
         </p>
         <h1 className="font-display text-4xl md:text-6xl text-cream max-w-3xl">
-          Every wedding is a different story. Here are a few of ours.
+             Every celebration is different. Here&apos;s a few we&apos;ve transformed.
         </h1>
       </section>
       <Portfolio />
