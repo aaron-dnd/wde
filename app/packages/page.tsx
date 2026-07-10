@@ -7,7 +7,7 @@ export default function PackagesPage() {
       <section className="container-wide pb-12 sm:pb-16">
         <p className="text-xs tracking-widest2 uppercase text-gold mb-4">
           <span className="eyebrow-line" />
-          Packages
+         WDE Packages
         </p>
         <h1 className="font-display text-3xl sm:text-4xl md:text-6xl text-cream max-w-3xl">
           Five levels of décor, scaled to your celebration

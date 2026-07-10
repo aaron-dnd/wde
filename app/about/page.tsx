@@ -10,18 +10,18 @@ export default function AboutPage() {
           Our Story
         </p>
         <h1 className="font-display text-4xl md:text-6xl text-cream max-w-3xl mb-8">
-          We started this studio to film weddings the way documentaries
-          film life
+          We started this studio to make every celebration feel
+          unmistakably yours
         </h1>
         <p className="text-stone text-lg leading-relaxed max-w-2xl">
-          Wedding Documentary Events was founded on a simple frustration:
-          most wedding films look identical — the same poses, the same
-          slow-motion confetti, the same music drop. We wanted something
-          closer to the truth. So we borrowed from cinéma vérité — the
-          belief that the camera should be a witness, not a director — and
-          applied it to the most human day most people will ever have.
-          Every film we make is built from what actually happened, not what
-          we staged to happen.
+          Wedding Documentary Events was founded on a simple belief: décor
+          shouldn&apos;t look borrowed from someone else&apos;s wedding. We build every
+          concept from scratch — palette, florals, structures, and lighting —
+          around your families, your venue, and the story you&apos;re
+          celebrating. From haldi to reception, birthdays to corporate
+          stages, we treat every function as its own design problem worth
+          solving properly. The result isn&apos;t a template dressed up — it&apos;s a
+          space built for exactly one celebration: yours.
         </p>
       </section>
       <Pillars />

@@ -11,7 +11,7 @@ export default function ServicesPage() {
           What We Do
         </p>
         <h1 className="font-display text-4xl md:text-6xl text-cream max-w-3xl">
-          Décor and event production, from haldi to the last dance
+           Décor and production for every celebration you&apos;re planning
         </h1>
       </section>
       <Services />
