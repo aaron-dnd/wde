@@ -13,7 +13,7 @@ export default function Portfolio() {
           <div>
             <p className="section-label mb-4">
               <span className="eyebrow-line bg-rose" />
-              Recent Films
+             Recent Celebrations
             </p>
             <h2 className="font-display text-3xl md:text-5xl max-w-xl">
               Real weddings, real families, real moments
