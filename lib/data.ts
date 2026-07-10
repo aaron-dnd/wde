@@ -1,23 +1,23 @@
 export const pillars = [
   {
     number: "01",
-    title: "Truth",
-    body: "We film what actually happens — the shaking hands during the vows, the aunt who cries first, the groom who can't stop laughing. No staged re-takes, no manufactured moments.",
+    title: "Detail",
+    body: "We obsess over the things guests notice without realizing why — the drape of a fabric, the height of a centerpiece, the way light hits a floral arch at golden hour. Nothing is left generic.",
   },
   {
     number: "02",
     title: "Presence",
-    body: "We arrive quietly and stay close. Listening before shooting, observing before directing. Your day isn't ours to script — it's ours to witness.",
+    body: "We're on-site from setup to teardown, adjusting as the day unfolds. Your décor isn't a delivery we drop off — it's a space we keep shaping until every corner feels right.",
   },
   {
     number: "03",
-    title: "Patience",
-    body: "The best frame is rarely the first one. We wait for the real embrace, the unplanned glance, the moment after the moment — because that's usually the one that matters.",
+    title: "Personalization",
+    body: "No two celebrations should look the same. We build every concept — palette, florals, structures, lighting — around your story, your families, and the venue itself.",
   },
   {
     number: "04",
     title: "Craft",
-    body: "New tools, new light, new ways of cutting a story — always in service of something human. Technology changes; what we're chasing never does.",
+    body: "New materials, new techniques, new ways of building a space — always in service of how it feels to stand inside it. Trends change; the craftsmanship behind them doesn't.",
   },
 ];
 export const packages = [

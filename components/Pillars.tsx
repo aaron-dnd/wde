@@ -12,7 +12,7 @@ export default function Pillars() {
           Our Philosophy
         </p>
         <h2 className="font-display text-3xl md:text-5xl text-cream max-w-2xl mb-16">
-          Four principles that shape how we film every wedding
+        Four principles that shape how we design every celebration
         </h2>
 
         <div className="grid md:grid-cols-2 gap-px bg-cream/10">

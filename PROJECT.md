@@ -34,7 +34,7 @@ wde/
 │   ├── Navbar.tsx           # Top navigation + mobile menu trigger (frosted glass + magnetic elements)
 │   ├── MobileMenu.tsx       # Animated mobile navigation
 │   ├── Hero.tsx             # Full-screen video hero (framer-motion)
-│   ├── Pillars.tsx          # Studio values (Truth/Presence/Patience/Craft)
+│   ├── Pillars.tsx          # Studio values (Detail/Presence/Personalization/Craft)
 │   ├── Services.tsx         # Services grid
 │   ├── Packages.tsx         # Pricing tiers (Bronze → Diamond)
 │   ├── Portfolio.tsx        # Featured wedding films
