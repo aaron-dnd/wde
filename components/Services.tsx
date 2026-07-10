@@ -9,10 +9,10 @@ export default function Services() {
       <div className="container-wide">
         <p className="section-label mb-4">
           <span className="eyebrow-line bg-rose" />
-          What We Cover
+           What We Do
         </p>
         <h2 className="font-display text-3xl md:text-5xl max-w-2xl mb-16">
-          Every function. Every ritual. Every side of the story.
+          Decor and event production for every celebration
         </h2>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">

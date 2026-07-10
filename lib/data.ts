@@ -1,23 +1,23 @@
 export const pillars = [
   {
     number: "01",
-    title: "Truth",
-    body: "We film what actually happens — the shaking hands during the vows, the aunt who cries first, the groom who can't stop laughing. No staged re-takes, no manufactured moments.",
+    title: "Detail",
+    body: "We obsess over the things guests notice without realizing why — the drape of a fabric, the height of a centerpiece, the way light hits a floral arch at golden hour. Nothing is left generic.",
   },
   {
     number: "02",
     title: "Presence",
-    body: "We arrive quietly and stay close. Listening before shooting, observing before directing. Your day isn't ours to script — it's ours to witness.",
+    body: "We're on-site from setup to teardown, adjusting as the day unfolds. Your décor isn't a delivery we drop off — it's a space we keep shaping until every corner feels right.",
   },
   {
     number: "03",
-    title: "Patience",
-    body: "The best frame is rarely the first one. We wait for the real embrace, the unplanned glance, the moment after the moment — because that's usually the one that matters.",
+    title: "Personalization",
+    body: "No two celebrations should look the same. We build every concept — palette, florals, structures, lighting — around your story, your families, and the venue itself.",
   },
   {
     number: "04",
     title: "Craft",
-    body: "New tools, new light, new ways of cutting a story — always in service of something human. Technology changes; what we're chasing never does.",
+    body: "New materials, new techniques, new ways of building a space — always in service of how it feels to stand inside it. Trends change; the craftsmanship behind them doesn't.",
   },
 ];
 export const packages = [
@@ -99,64 +99,64 @@ export const packages = [
 ];
 export const services = [
   {
-    title: "Pre-Wedding Films & Shoots",
+    title: "Wedding Decoration",
     description:
-      "Cinematic couple sessions before the big day — concept-led or candid, on location or destination.",
-  },
-  {
-    title: "Haldi & Mehendi Coverage",
-    description:
-      "The turmeric-stained hands, the henna cones, the family dance rehearsals — documented in full color and chaos.",
-  },
-  {
-    title: "Sangeet & Cocktail Night",
-    description:
-      "Multi-camera coverage of performances, speeches, and the dance floor at its most alive.",
-  },
-  {
-    title: "Wedding Day Documentary",
-    description:
-      "Full-day, multi-angle coverage from getting-ready to the last ritual — a complete, unscripted archive of the day.",
-  },
-  {
-    title: "Reception Films",
-    description:
-      "Entrances, toasts, first dances — captured with the same honesty as the ceremony itself.",
-  },
-  {
-    title: "Cinematic Wedding Films",
-    description:
-      "A 3–6 minute story cut with sound design, color grading, and pacing built around your relationship, not a template.",
-  },
-  {
-    title: "Fine-Art Photography",
-    description:
-      "Editorial-grade stills across every event, delivered as a curated, gallery-ready collection.",
-  },
-  {
-    title: "Drone & Aerial Coverage",
-    description:
-      "Venue establishing shots, procession aerials, and wide reception coverage where the location allows.",
-  },
-  {
-    title: "Same-Day Edit",
-    description:
-      "A short, emotional highlight film cut and screened at your reception, same day.",
-  },
-  {
-    title: "Live Streaming",
-    description:
-      "Multi-camera live broadcast for family and friends who can't attend in person.",
-  },
-  {
-    title: "Wedding Albums",
-    description:
-      "Archival-quality printed albums, hand-sequenced from your full-day collection.",
+      "End-to-end décor across every wedding function — haldi, mehendi, sangeet, the ceremony mandap, and reception stage — designed as one cohesive story, not separate setups.",
   },
   {
     title: "Destination Weddings",
     description:
-      "Full-team travel coverage for weddings outside the city — logistics handled, story uninterrupted.",
+      "Full-team travel and on-site execution for weddings outside the city — venue styling, logistics, and setup handled start to finish, wherever you choose to celebrate.",
+  },
+  {
+    title: "Engagement & Proposal Events",
+    description:
+      "Intimate to elaborate — a styled proposal setting or engagement backdrop built to make the moment feel exactly as big as it is.",
+  },
+  {
+    title: "Birthday Decoration",
+    description:
+      "Themed setups for every age and milestone, from first birthdays to milestone celebrations, tailored to the personality behind the party.",
+  },
+  {
+    title: "Housewarming Decor & Ceremony",
+    description:
+      "Traditional griha pravesh styling and ceremony setup, blending ritual requirements with a warm, welcoming décor language for the new home.",
+  },
+  {
+    title: "Private Parties",
+    description:
+      "Anniversaries, get-togethers, and personal celebrations styled with the same attention to detail as our largest events.",
+  },
+  {
+    title: "Corporate Events",
+    description:
+      "Product launches, conferences, and company milestones — professional staging, branding integration, and venue design that reflects your company's identity.",
+  },
+  {
+    title: "Concerts & Live Shows",
+    description:
+      "Complete stage production — décor, LED walls, lighting rigs, mic systems, and speaker setups — built for performance-grade sound and visual impact.",
+  },
+  {
+    title: "Fashion Shows",
+    description:
+      "Runway construction, backstage styling, and ambient lighting design built to put the collection — and the moment — center stage.",
+  },
+  {
+    title: "DJ Nights",
+    description:
+      "High-energy lighting, sound, and stage décor tuned for the dance floor, from intimate lounges to full-scale night events.",
+  },
+  {
+    title: "Cultural Festivals",
+    description:
+      "Large-scale décor and stage setups for community and cultural celebrations, honoring tradition while creating a striking shared space.",
+  },
+  {
+    title: "Movie Promotions",
+    description:
+      "Branded stage design, step-and-repeat backdrops, and event production for film launches, press events, and promotional tours.",
   },
 ];
 

@@ -45,9 +45,10 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 0.3 }}
           className="mt-6 sm:mt-8 max-w-xl text-stone text-sm sm:text-base md:text-lg leading-relaxed"
         >
-          Wedding Documentary Events is a cinematic studio capturing real,
-          unscripted love — from haldi to reception — with the patience of a
-          documentary filmmaker and the eye of a fine-art photographer.
+           Wedding Documentary Events is a full-service décor and event
+          styling studio, transforming haldi to reception into spaces that
+          feel as memorable as the moments themselves — for weddings and
+          every celebration in between.
         </motion.p>
       </div>
     </section>
