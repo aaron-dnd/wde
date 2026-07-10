@@ -46,9 +46,9 @@ export default function Hero() {
           className="mt-6 sm:mt-8 max-w-xl text-stone text-sm sm:text-base md:text-lg leading-relaxed"
         >
            Wedding Documentary Events is a full-service décor and event
-          styling studio, transforming haldi to reception into spaces that
-          feel as memorable as the moments themselves — for weddings and
-          every celebration in between.
+          styling studio — designing spaces for weddings, birthdays,
+          corporate events, concerts, and every celebration in between,
+          each one built to feel as memorable as the moment itself.
         </motion.p>
       </div>
     </section>
