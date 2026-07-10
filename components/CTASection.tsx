@@ -5,7 +5,7 @@ export default function CTASection() {
     <section className="bg-rose py-24 md:py-32">
       <div className="container-wide text-center">
         <h2 className="font-display text-3xl md:text-5xl text-ink mb-8 max-w-2xl mx-auto">
-          Let's document your wedding the way it actually happens
+          Let&apos;s design your celebration the way it deserves to be seen
         </h2>
         <Link
           href="/contact"

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Magnetic from "./Magnetic";
+import DatePicker from "./DatePicker";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "submitting" | "success">(
@@ -27,7 +28,7 @@ export default function ContactForm() {
   if (status === "success") {
     return (
       <p className="font-display text-2xl text-cream">
-        Thank you — we've received your enquiry and will reply by email
+        Thank you — we&apos;ve received your enquiry and will reply by email
         within 48 hours.
       </p>
     );
@@ -35,22 +36,31 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-8 max-w-xl">
-      <div className="grid sm:grid-cols-2 gap-8">
-        <Field name="name" label="Your Names" placeholder="Amara & Rohan" required />
+     <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
+        <Field name="name" label="Your Name(s)" placeholder="Amara & Rohan" required />
         <Field name="email" label="Email" type="email" placeholder="you@email.com" required />
       </div>
-      <div className="grid sm:grid-cols-2 gap-8">
+      <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
         <Field name="phone" label="Phone" placeholder="+91 90000 00000" />
-        <Field name="date" label="Wedding Date" type="date" />
+       <DatePicker name="date" label="Event Date" />
       </div>
       <Field name="location" label="Venue / City" placeholder="Bengaluru, Karnataka" />
 
       <div>
         <label className="text-xs tracking-widest2 uppercase text-stone">
-          Events to Cover
+          Type of Event
         </label>
         <div className="flex flex-wrap gap-4 mt-3">
-          {["Haldi", "Mehendi", "Sangeet", "Wedding", "Reception"].map((ev) => (
+          {[
+            "Haldi",
+            "Mehendi",
+            "Sangeet",
+            "Wedding",
+            "Reception",
+            "Birthday",
+            "Corporate",
+            "Other",
+          ].map((ev) => (
             <label key={ev} className="flex items-center gap-2 text-cream text-sm">
               <input type="checkbox" name="events" value={ev} className="accent-rose" />
               {ev}
@@ -61,12 +71,12 @@ export default function ContactForm() {
 
       <div>
         <label className="text-xs tracking-widest2 uppercase text-stone">
-          Tell us about your wedding
+          Tell us about your celebration
         </label>
         <textarea
           name="message"
           rows={5}
-          placeholder="Number of guests, functions, and anything that matters to you..."
+          placeholder="Number of guests, functions, venue, and anything that matters to you..."
           className="w-full mt-3 bg-transparent border-b border-cream/30 py-3 text-cream placeholder:text-stone focus:outline-none focus:border-rose transition-colors resize-none"
         />
       </div>

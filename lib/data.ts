@@ -161,35 +161,34 @@ export const process = [
   {
     step: "01",
     title: "Enquiry & Discovery Call",
-    body: "We start with a conversation — your story, your families, your wedding dates and locations.",
+    body: "We start with a conversation — your celebration, your families, your dates, your venue, and the vision you have in mind.",
   },
   {
     step: "02",
-    title: "Proposal & Package",
-    body: "A tailored coverage plan across your events, with transparent pricing and deliverables.",
+    title: "Concept & Package",
+    body: "A tailored décor concept across your functions, with mood boards, material choices, and a package that fits your scale.",
   },
   {
     step: "03",
-    title: "Pre-Wedding Planning",
-    body: "Shot lists for key rituals, timeline mapping, and an optional pre-wedding shoot.",
+    title: "Design & Planning",
+    body: "Venue walkthroughs, floral and structure sourcing, lighting plans, and a detailed setup timeline for every function.",
   },
   {
     step: "04",
-    title: "Event Coverage",
-    body: "Our team documents each function — haldi to reception — quietly, thoroughly, honestly.",
+    title: "Setup & Execution",
+    body: "Our team builds and styles each venue — haldi to reception — arriving early and staying through to make sure every detail holds.",
   },
   {
     step: "05",
-    title: "Edit & Color",
-    body: "Selects, sequencing, sound design, and color grading, treated like a short film — not a highlight reel.",
+    title: "On-Site Styling",
+    body: "Live adjustments through the event — florals refreshed, lighting fine-tuned, every corner checked before your guests arrive.",
   },
   {
     step: "06",
-    title: "Delivery",
-    body: "Final films, full photo galleries, and albums delivered — yours to keep, forever.",
+    title: "Teardown & Handover",
+    body: "Clean, efficient teardown once the celebration ends — the venue restored, and your memories left exactly as they should be.",
   },
 ];
-
 export const portfolio = [
   {
     slug: "amara-rohan",
@@ -238,18 +237,33 @@ export const portfolio = [
 export const testimonials = [
   {
     quote:
-      "They disappeared into the day. We forgot they were even filming — until we saw the film and cried for twenty minutes straight.",
+      "We walked into the venue and didn't recognize it. Every corner felt intentional — our families were still talking about the mandap weeks later.",
     name: "Amara & Rohan",
   },
   {
     quote:
-      "Every other studio wanted us to pose. This team just... watched. The result feels like our actual wedding, not a performance of it.",
+      "Every other vendor wanted to sell us a fixed package. This team actually listened to what we wanted and built around it.",
     name: "Diya & Arjun",
   },
   {
     quote:
-      "Four days of events, and they caught things our own families didn't notice happening. That's the whole point, isn't it.",
+      "Four days of events, four completely different setups, and not one detail felt rushed. That's the whole point, isn't it.",
     name: "Meera & Kabir",
+  },
+  {
+    quote:
+      "Our budget was modest and they never once made us feel like a smaller booking. The Silver package still looked like a much bigger wedding.",
+    name: "Sana & Vikram",
+  },
+  {
+    quote:
+      "They handled our sangeet stage, the LED wall, the sound — everything in sync. Not a single cue was late all night.",
+    name: "Riya & Aditya",
+  },
+  {
+    quote:
+      "We planned this from another city and never once felt out of the loop. They sent updates through setup and it looked exactly as promised.",
+    name: "Neha & Siddharth",
   },
 ];
 
