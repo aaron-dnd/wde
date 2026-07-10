@@ -267,11 +267,69 @@ export const testimonials = [
   },
 ];
 
+export const concepts = [
+  {
+    slug: "royal-rajasthani",
+    title: "Royal Rajasthani",
+    tag: "Mandap Concept",
+    description:
+      "Rich reds and gold leaf, hand-carved arches, and marigold cascades — built for a ceremony that feels regal without losing warmth.",
+    palette: ["#7a1f2b", "#b88c4a", "#d8b061", "#2c1810"],
+    cover: "/concepts/royal-rajasthani.jpg",
+  },
+  {
+    slug: "minimal-ivory-sage",
+    title: "Minimal Ivory & Sage",
+    tag: "Reception Styling",
+    description:
+      "Soft neutrals, sculptural greenery, and clean linework — a modern reception that lets the couple, not the décor, take center stage.",
+    palette: ["#f4efe8", "#9caf88", "#d8b061", "#4a4a42"],
+    cover: "/concepts/ivory-sage.jpg",
+  },
+  {
+    slug: "vintage-marigold",
+    title: "Vintage Marigold",
+    tag: "Haldi & Mehendi",
+    description:
+      "Marigold garlands, brass urlis, and hand-block printed fabric — a haldi setup built for color, movement, and family photos.",
+    palette: ["#e8a13c", "#a17937", "#7a5c2e", "#f4efe8"],
+    cover: "/concepts/vintage-marigold.jpg",
+  },
+  {
+    slug: "monochrome-corporate",
+    title: "Monochrome Corporate",
+    tag: "Stage & Brand Activation",
+    description:
+      "Black, white, and a single brand accent — precise lighting and clean geometry for product launches and company milestones.",
+    palette: ["#0b0b0c", "#f4efe8", "#906925", "#8a8580"],
+    cover: "/concepts/monochrome-corporate.jpg",
+  },
+  {
+    slug: "midnight-sangeet",
+    title: "Midnight Sangeet",
+    tag: "Sangeet Stage",
+    description:
+      "Deep navy drapes, LED backdrop, and metallic accents — a stage built to hold performances, lighting cues, and a packed dance floor.",
+    palette: ["#1a2238", "#b88c4a", "#d8b061", "#0b0b0c"],
+    cover: "/concepts/midnight-sangeet.jpg",
+  },
+  {
+    slug: "garden-pastel",
+    title: "Garden Pastel",
+    tag: "Daytime Wedding",
+    description:
+      "Blush, sage, and cream with abundant fresh florals — built for outdoor daytime ceremonies and soft, natural light.",
+    palette: ["#e8c4c4", "#9caf88", "#f4efe8", "#c9a86a"],
+    cover: "/concepts/garden-pastel.jpg",
+  },
+];
+
 export const navLinks = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/packages", label: "Packages" },
   { href: "/portfolio", label: "Work" },
+  { href: "/concepts", label: "Concepts" },
   { href: "/process", label: "Process" },
   { href: "/contact", label: "Enquire" },
 ];

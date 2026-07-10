@@ -1,4 +1,5 @@
 import Pillars from "@/components/Pillars";
+import Directors from "@/components/Directors";
 import CTASection from "@/components/CTASection";
 
 export default function AboutPage() {
@@ -24,6 +25,7 @@ export default function AboutPage() {
           space built for exactly one celebration: yours.
         </p>
       </section>
+      <Directors />
       <Pillars />
       <CTASection />
     </div>
