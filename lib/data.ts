@@ -54,9 +54,9 @@ export const packages = [
     accent: "#b98a4b",
     popular: true,
     features: [
-      "Décor for 3 functions (Sangeet + Wedding + Reception)",
+      "Décor for 3 functions (Haldi + Wedding + Reception)",
       "Custom mandap / stage design with premium florals",
-      "Themed sangeet stage with LED backdrop",
+      "Themed haldi stage with LED backdrop",
       "Designer lighting across all venues",
       "Lounge, entrance & photo-booth styling",
       "Photography + cinematic film included",
@@ -176,7 +176,7 @@ export const process = [
   {
     step: "04",
     title: "Setup & Execution",
-    body: "Our team builds and styles each venue — haldi to reception — arriving early and staying through to make sure every detail holds.",
+    body: "Our team builds and styles each venue — arriving early and staying through to make sure every detail holds.",
   },
   {
     step: "05",
