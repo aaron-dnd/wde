@@ -2,22 +2,22 @@ export const pillars = [
   {
     number: "01",
     title: "Detail",
-    body: "We obsess over the things guests notice without realizing why — the drape of a fabric, the height of a centerpiece, the way light hits a floral arch at golden hour. Nothing is left generic.",
+    body: "We obsess over the things guests notice without realizing why - the drape of a fabric, the height of a centerpiece, the way light hits a floral arch at golden hour. Nothing is left generic.",
   },
   {
     number: "02",
     title: "Presence",
-    body: "We're on-site from setup to teardown, adjusting as the day unfolds. Your décor isn't a delivery we drop off — it's a space we keep shaping until every corner feels right.",
+    body: "We're on-site from setup to teardown, adjusting as the day unfolds. Your décor isn't a delivery we drop off - it's a space we keep shaping until every corner feels right.",
   },
   {
     number: "03",
     title: "Personalization",
-    body: "No two celebrations should look the same. We build every concept — palette, florals, structures, lighting — around your story, your families, and the venue itself.",
+    body: "No two celebrations should look the same. We build every concept - palette, florals, structures, lighting - around your story, your families, and the venue itself.",
   },
   {
     number: "04",
     title: "Craft",
-    body: "New materials, new techniques, new ways of building a space — always in service of how it feels to stand inside it. Trends change; the craftsmanship behind them doesn't.",
+    body: "New materials, new techniques, new ways of building a space - always in service of how it feels to stand inside it. Trends change; the craftsmanship behind them doesn't.",
   },
 ];
 export const packages = [
@@ -70,7 +70,7 @@ export const packages = [
     accent: "#8fa3ad",
     features: [
       "Décor for 4 functions (Haldi + Sangeet + Wedding + Reception)",
-      "Fully custom structures — mandap, stage & haldi setup",
+      "Fully custom structures - mandap, stage & haldi setup",
       "Premium florals with statement installations",
       "Full venue lighting design",
       "LED walls & sound setup for sangeet",
@@ -98,17 +98,17 @@ export const services = [
   {
     title: "Wedding Decoration",
     description:
-      "End-to-end décor across every wedding function — haldi, mehendi, sangeet, the ceremony mandap, and reception stage — designed as one cohesive story, not separate setups.",
+      "End-to-end décor across every wedding function - haldi, mehendi, sangeet, the ceremony mandap, and reception stage - designed as one cohesive story, not separate setups.",
   },
   {
     title: "Destination Weddings",
     description:
-      "Full-team travel and on-site execution for weddings outside the city — venue styling, logistics, and setup handled start to finish, wherever you choose to celebrate.",
+      "Full-team travel and on-site execution for weddings outside the city - venue styling, logistics, and setup handled start to finish, wherever you choose to celebrate.",
   },
   {
     title: "Engagement & Proposal Events",
     description:
-      "Intimate to elaborate — a styled proposal setting or engagement backdrop built to make the moment feel exactly as big as it is.",
+      "Intimate to elaborate - a styled proposal setting or engagement backdrop built to make the moment feel exactly as big as it is.",
   },
   {
     title: "Birthday Decoration",
@@ -128,17 +128,17 @@ export const services = [
   {
     title: "Corporate Events",
     description:
-      "Product launches, conferences, and company milestones — professional staging, branding integration, and venue design that reflects your company's identity.",
+      "Product launches, conferences, and company milestones - professional staging, branding integration, and venue design that reflects your company's identity.",
   },
   {
     title: "Concerts & Live Shows",
     description:
-      "Complete stage production — décor, LED walls, lighting rigs, mic systems, and speaker setups — built for performance-grade sound and visual impact.",
+      "Complete stage production - décor, LED walls, lighting rigs, mic systems, and speaker setups - built for performance-grade sound and visual impact.",
   },
   {
     title: "Fashion Shows",
     description:
-      "Runway construction, backstage styling, and ambient lighting design built to put the collection — and the moment — center stage.",
+      "Runway construction, backstage styling, and ambient lighting design built to put the collection - and the moment - center stage.",
   },
   {
     title: "DJ Nights",
@@ -161,7 +161,7 @@ export const process = [
   {
     step: "01",
     title: "Enquiry & Discovery Call",
-    body: "We start with a conversation — your celebration, your families, your dates, your venue, and the vision you have in mind.",
+    body: "We start with a conversation - your celebration, your families, your dates, your venue, and the vision you have in mind.",
   },
   {
     step: "02",
@@ -176,17 +176,17 @@ export const process = [
   {
     step: "04",
     title: "Setup & Execution",
-    body: "Our team builds and styles each venue — arriving early and staying through to make sure every detail holds.",
+    body: "Our team builds and styles each venue - arriving early and staying through to make sure every detail holds.",
   },
   {
     step: "05",
     title: "On-Site Styling",
-    body: "Live adjustments through the event — florals refreshed, lighting fine-tuned, every corner checked before your guests arrive.",
+    body: "Live adjustments through the event - florals refreshed, lighting fine-tuned, every corner checked before your guests arrive.",
   },
   {
     step: "06",
     title: "Teardown & Handover",
-    body: "Clean, efficient teardown once the celebration ends — the venue restored, and your memories left exactly as they should be.",
+    body: "Clean, efficient teardown once the celebration ends - the venue restored, and your memories left exactly as they should be.",
   },
 ];
 export const portfolio = [
@@ -237,7 +237,7 @@ export const portfolio = [
 export const testimonials = [
   {
     quote:
-      "We walked into the venue and didn't recognize it. Every corner felt intentional — our families were still talking about the mandap weeks later.",
+      "We walked into the venue and didn't recognize it. Every corner felt intentional - our families were still talking about the mandap weeks later.",
     name: "Amara & Rohan",
   },
   {
@@ -257,7 +257,7 @@ export const testimonials = [
   },
   {
     quote:
-      "They handled our sangeet stage, the LED wall, the sound — everything in sync. Not a single cue was late all night.",
+      "They handled our sangeet stage, the LED wall, the sound - everything in sync. Not a single cue was late all night.",
     name: "Riya & Aditya",
   },
   {
@@ -267,11 +267,69 @@ export const testimonials = [
   },
 ];
 
+export const concepts = [
+  {
+    slug: "royal-rajasthani",
+    title: "Royal Rajasthani",
+    tag: "Mandap Concept",
+    description:
+      "Rich reds and gold leaf, hand-carved arches, and marigold cascades - built for a ceremony that feels regal without losing warmth.",
+    palette: ["#7a1f2b", "#b88c4a", "#d8b061", "#2c1810"],
+    cover: "/concepts/royal-rajasthani.jpg",
+  },
+  {
+    slug: "minimal-ivory-sage",
+    title: "Minimal Ivory & Sage",
+    tag: "Reception Styling",
+    description:
+      "Soft neutrals, sculptural greenery, and clean linework - a modern reception that lets the couple, not the décor, take center stage.",
+    palette: ["#f4efe8", "#9caf88", "#d8b061", "#4a4a42"],
+    cover: "/concepts/ivory-sage.jpg",
+  },
+  {
+    slug: "vintage-marigold",
+    title: "Vintage Marigold",
+    tag: "Haldi & Mehendi",
+    description:
+      "Marigold garlands, brass urlis, and hand-block printed fabric - a haldi setup built for color, movement, and family photos.",
+    palette: ["#e8a13c", "#a17937", "#7a5c2e", "#f4efe8"],
+    cover: "/concepts/vintage-marigold.jpg",
+  },
+  {
+    slug: "monochrome-corporate",
+    title: "Monochrome Corporate",
+    tag: "Stage & Brand Activation",
+    description:
+      "Black, white, and a single brand accent - precise lighting and clean geometry for product launches and company milestones.",
+    palette: ["#0b0b0c", "#f4efe8", "#906925", "#8a8580"],
+    cover: "/concepts/monochrome-corporate.jpg",
+  },
+  {
+    slug: "midnight-sangeet",
+    title: "Midnight Sangeet",
+    tag: "Sangeet Stage",
+    description:
+      "Deep navy drapes, LED backdrop, and metallic accents - a stage built to hold performances, lighting cues, and a packed dance floor.",
+    palette: ["#1a2238", "#b88c4a", "#d8b061", "#0b0b0c"],
+    cover: "/concepts/midnight-sangeet.jpg",
+  },
+  {
+    slug: "garden-pastel",
+    title: "Garden Pastel",
+    tag: "Daytime Wedding",
+    description:
+      "Blush, sage, and cream with abundant fresh florals - built for outdoor daytime ceremonies and soft, natural light.",
+    palette: ["#e8c4c4", "#9caf88", "#f4efe8", "#c9a86a"],
+    cover: "/concepts/garden-pastel.jpg",
+  },
+];
+
 export const navLinks = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
-  { href: "/packages", label: "Packages" },
+  // { href: "/packages", label: "Packages" },
   { href: "/portfolio", label: "Work" },
+  { href: "/concepts", label: "Concepts" },
   { href: "/process", label: "Process" },
   { href: "/contact", label: "Enquire" },
 ];

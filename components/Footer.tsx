@@ -39,9 +39,17 @@ export default function Footer() {
               Contact
             </p>
             <ul className="space-y-2 text-sm text-cream/70">
-              <li>hello@weddingdocumentaryevents.com</li>
-              <li>+91 90000 00000</li>
-              <li>Bengaluru, Karnataka</li>
+              <li>
+                <a href="mailto:weddingdocumentaryevents@gmail.com" className="hover:text-cream transition-colors">
+                  weddingdocumentaryevents@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:+919573824261" className="hover:text-cream transition-colors">
+                  +91 95738 24261
+                </a>
+              </li>
+              <li>Vijayawada, Andhra Pradesh</li>
             </ul>
           </div>
         </div>

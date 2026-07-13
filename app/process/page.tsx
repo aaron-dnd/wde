@@ -10,7 +10,7 @@ export default function ProcessPage() {
           <span className="eyebrow-line" />
           How It Works
         </p>
-        <h1 className="font-display text-4xl md:text-6xl text-cream max-w-3xl">
+        <h1 className="font-display text-3xl md:text-5xl text-cream max-w-none">
           Simple, transparent, and built around your timeline
         </h1>
       </section>

@@ -10,7 +10,7 @@ interface WhatsAppWidgetProps {
 }
 
 export default function WhatsAppWidget({
-  phoneNumber = "919000000000", // Replace with your actual number.
+  phoneNumber = "919573824261", // Replace with your actual number.
 }: WhatsAppWidgetProps) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -66,36 +66,7 @@ export default function WhatsAppWidget({
                 </p>
               </div>
 
-              {/* Quick Options - Trigger WhatsApp with tailored messages */}
-              <div className="flex flex-col gap-2.5">
-                <a
-                  href={getWhatsAppLink("Hi! I'd like to get details about your wedding packages and pricing.")}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-between px-4 py-3 bg-ink-light/40 border border-cream/5 hover:border-cream/20 hover:bg-cream/5 rounded-xl transition-all duration-300 group text-sm font-light"
-                >
-                  <span>🎉 Get Package Details</span>
-                  <span className="text-xs text-cream/40 group-hover:text-cream/90 transition-colors">➔</span>
-                </a>
-                <a
-                  href={getWhatsAppLink("Hello, I would like to check if you are available for my wedding date.")}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-between px-4 py-3 bg-ink-light/40 border border-cream/5 hover:border-cream/20 hover:bg-cream/5 rounded-xl transition-all duration-300 group text-sm font-light"
-                >
-                  <span>📅 Check Date Availability</span>
-                  <span className="text-xs text-cream/40 group-hover:text-cream/90 transition-colors">➔</span>
-                </a>
-                <a
-                  href={getWhatsAppLink("Hi, I'd like to chat with a cinematographer/photographer about my wedding documentation.")}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-between px-4 py-3 bg-ink-light/40 border border-cream/5 hover:border-cream/20 hover:bg-cream/5 rounded-xl transition-all duration-300 group text-sm font-light"
-                >
-                  <span>💬 Chat with Expert</span>
-                  <span className="text-xs text-cream/40 group-hover:text-cream/90 transition-colors">➔</span>
-                </a>
-              </div>
+
 
               {/* Fallback Direct Continue Button */}
               <a

@@ -10,7 +10,7 @@ export default function ServicesPage() {
           <span className="eyebrow-line" />
           What We Do
         </p>
-        <h1 className="font-display text-4xl md:text-6xl text-cream max-w-3xl">
+        <h1 className="font-display text-3xl md:text-5xl text-cream max-w-none">
            Décor and production for every celebration you&apos;re planning
         </h1>
       </section>

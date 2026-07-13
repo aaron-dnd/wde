@@ -3,12 +3,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { navLinks } from "@/lib/data";
 import MobileMenu from "./MobileMenu";
 import { Menu } from "lucide-react";
 import Magnetic from "./Magnetic";
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -42,16 +44,23 @@ export default function Navbar() {
             </div>
           </Link>
           <nav className="hidden md:flex items-center gap-6 lg:gap-8">
-            {navLinks.map((link) => (
-              <Magnetic key={link.href} strength={20}>
-                <Link
-                  href={link.href}
-                  className="block text-xs tracking-widest2 uppercase text-cream/80 hover:text-rose transition-colors py-2 px-1"
-                >
-                  {link.label}
-                </Link>
-              </Magnetic>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = pathname === link.href;
+              return (
+                <Magnetic key={link.href} strength={20}>
+                  <Link
+                    href={link.href}
+                    className={`block tracking-widest2 uppercase transition-all duration-300 py-2 px-1 ${
+                      isActive
+                        ? "text-rose text-sm font-semibold"
+                        : "text-cream/80 text-xs hover:text-rose hover:text-[13px]"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                </Magnetic>
+              );
+            })}
           </nav>
 
           <Magnetic strength={40}>

@@ -5,17 +5,17 @@ import { process } from "@/lib/data";
 
 export default function Process() {
   return (
-    <section id="process" className="bg-ink py-28 md:py-36">
+    <section id="process" className="bg-cream text-ink py-28 md:py-36 border-t border-ink/5">
       <div className="container-wide">
         <p className="section-label mb-4">
-          <span className="eyebrow-line" />
+          <span className="eyebrow-line bg-rose" />
           How It Works
         </p>
-        <h2 className="font-display text-3xl md:text-5xl text-cream max-w-2xl mb-16">
+        <h2 className="font-display text-3xl md:text-5xl text-ink max-w-2xl mb-16">
           From first enquiry to final delivery
         </h2>
 
-        <div className="space-y-0 divide-y divide-cream/10">
+        <div className="space-y-0 divide-y divide-ink/10">
           {process.map((step, i) => (
             <motion.div
               key={step.step}
@@ -28,10 +28,10 @@ export default function Process() {
               <span className="font-display text-4xl text-rose/70 md:w-20 shrink-0">
                 {step.step}
               </span>
-              <h3 className="font-display text-xl md:text-2xl text-cream md:w-72 shrink-0">
+              <h3 className="font-display text-xl md:text-2xl text-ink md:w-72 shrink-0">
                 {step.title}
               </h3>
-              <p className="text-stone leading-relaxed max-w-xl">{step.body}</p>
+              <p className="text-ink/70 leading-relaxed max-w-xl">{step.body}</p>
             </motion.div>
           ))}
         </div>

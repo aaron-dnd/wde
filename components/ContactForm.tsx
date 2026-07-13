@@ -28,7 +28,7 @@ export default function ContactForm() {
   if (status === "success") {
     return (
       <p className="font-display text-2xl text-cream">
-        Thank you — we&apos;ve received your enquiry and will reply by email
+        Thank you - we&apos;ve received your enquiry and will reply by email
         within 48 hours.
       </p>
     );
@@ -38,10 +38,10 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-8 max-w-xl">
      <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
         <Field name="name" label="Your Name(s)" placeholder="Amara & Rohan" required />
-        <Field name="email" label="Email" type="email" placeholder="you@email.com" required />
+        <Field name="email" label="Email" type="email" placeholder="you@email.com" />
       </div>
       <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
-        <Field name="phone" label="Phone" placeholder="+91 90000 00000" />
+        <Field name="phone" label="Phone" placeholder="+91 90000 00000" required />
        <DatePicker name="date" label="Event Date" />
       </div>
       <Field name="location" label="Venue / City" placeholder="Bengaluru, Karnataka" />

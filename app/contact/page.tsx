@@ -7,12 +7,12 @@ export default function ContactPage() {
         <span className="eyebrow-line" />
         Enquire
       </p>
-      <h1 className="font-display text-4xl md:text-6xl text-cream max-w-2xl mb-4">
+      <h1 className="font-display text-3xl md:text-5xl text-cream max-w-none mb-4">
         Tell us about your celebration
       </h1>
       <p className="text-stone max-w-xl mb-16">
         Weddings, birthdays, corporate events, or something entirely your
-        own — share a few details below and we&apos;ll get back to you within 48
+        own - share a few details below and we&apos;ll get back to you within 48
         hours with availability and a tailored proposal.
       </p>
       <ContactForm />
