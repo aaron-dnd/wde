@@ -5,23 +5,35 @@ import Image from "next/image";
 import Link from "next/link";
 import { portfolio } from "@/lib/data";
 
-export default function Portfolio() {
+export default function Portfolio({ theme = "dark" }: { theme?: "dark" | "light" }) {
+  const isDark = theme === "dark";
   return (
-    <section id="films" className="bg-cream text-ink py-28 md:py-36">
+    <section
+      id="films"
+      className={`py-28 md:py-36 border-t ${
+        isDark
+          ? "bg-ink text-cream border-cream/5"
+          : "bg-cream text-ink border-ink/5"
+      }`}
+    >
       <div className="container-wide">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
           <div>
             <p className="section-label mb-4">
-              <span className="eyebrow-line bg-rose" />
-             Recent Celebrations
+              <span className={`eyebrow-line ${isDark ? "bg-rose" : "bg-gold"}`} />
+              Recent Celebrations
             </p>
             <h2 className="font-display text-3xl md:text-5xl max-w-xl">
               Real weddings, real families, real moments
             </h2>
           </div>
-           <Link
+          <Link
             href="/portfolio"
-            className="text-xs tracking-widest2 uppercase border-b border-ink pb-1 hover:text-rose hover:border-rose transition-colors"
+            className={`text-xs tracking-widest2 uppercase border-b pb-1 transition-colors ${
+              isDark
+                ? "border-cream/30 text-cream hover:text-rose hover:border-rose"
+                : "border-ink/30 text-ink hover:text-rose hover:border-rose"
+            }`}
           >
             View all work
           </Link>

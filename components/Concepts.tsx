@@ -16,7 +16,7 @@ export default function Concepts() {
           Concepts we design, ready to be built for you
         </h2>
         <p className="text-stone max-w-xl mb-16 text-sm sm:text-base">
-          These are design directions, not completed events — a starting
+          These are design directions, not completed events - a starting
           point for you or your vendors to see how a theme could come
           together before we build it for real.
         </p>

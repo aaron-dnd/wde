@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import Pillars from "@/components/Pillars";
 import Services from "@/components/Services";
-import Packages from "@/components/Packages";
+// import Packages from "@/components/Packages";
 import Portfolio from "@/components/Portfolio";
 import Process from "@/components/Process";
 import Testimonials from "@/components/Testimonials";
@@ -13,7 +13,7 @@ export default function Home() {
       <Hero />
       <Pillars />
       <Services />
-       <Packages />
+      {/* <Packages /> */}
       <Portfolio />
       <Process />
       <Testimonials />

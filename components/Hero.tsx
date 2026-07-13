@@ -12,7 +12,6 @@ export default function Hero() {
         loop
         playsInline
         className="absolute inset-0 h-full w-full object-cover opacity-60"
-        poster="/hero-poster.jpg"
       >
         <source src="/portfolio/hero-reel.mp4" type="video/mp4" />
       </video>
@@ -46,7 +45,7 @@ export default function Hero() {
           className="mt-6 sm:mt-8 max-w-xl text-stone text-sm sm:text-base md:text-lg leading-relaxed"
         >
            Wedding Documentary Events is a full-service décor and event
-          styling studio — designing spaces for weddings, birthdays,
+          styling studio - designing spaces for weddings, birthdays,
           corporate events, concerts, and every celebration in between,
           each one built to feel as memorable as the moment itself.
         </motion.p>

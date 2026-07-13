@@ -9,7 +9,7 @@ export default function ConceptsPage() {
           <span className="eyebrow-line" />
           Concepts
         </p>
-        <h1 className="font-display text-3xl sm:text-4xl md:text-6xl text-cream max-w-3xl">
+        <h1 className="font-display text-3xl sm:text-4xl md:text-5xl text-cream max-w-none">
           How we&apos;d design it, before we build it
         </h1>
       </section>

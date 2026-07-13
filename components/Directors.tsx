@@ -8,19 +8,19 @@ const directors = [
     name: "MR. J. ADITYA RATHOD",
     role: "Founder & Creative Director",
     image: "/team/director-one.jpg",
-    bio: "Leads the design vision across every celebration — from first concept sketch to final walkthrough. Believes décor should feel personal, never templated.",
+    bio: "Leads the design vision across every celebration - from first concept sketch to final walkthrough. Believes décor should feel personal, never templated.",
   },
   {
     name: "MR. AARON AMIT BIRRU",
     role: "Partner, Technology & Execution",
     image: "/team/director-two.jpg",
-    bio: "Co-built the studio from the ground up — the systems, the process, the standard every event is held to.",
+    bio: "Co-built the studio from the ground up - the systems, the process, the standard every event is held to.",
   },
    {
     name: "MR. KARTHIK BULLA",
     role: "Technical & Production Partner",
     image: "/team/director-three.png",
-    bio: "The studio's technical backbone — from brand identity to what runs behind the scenes, and hands-on wherever precision matters most on event day.",
+    bio: "The studio's technical backbone - from brand identity to what runs behind the scenes, and hands-on wherever precision matters most on event day.",
   },
 ];
 
@@ -36,7 +36,7 @@ export default function Directors() {
           The people behind every celebration we build
         </h2>
 
-         <div className="grid grid-cols-3 gap-3 sm:gap-6 md:gap-10">
+         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-6 lg:gap-10">
           {directors.map((d, i) => (
             <motion.div
               key={d.name}

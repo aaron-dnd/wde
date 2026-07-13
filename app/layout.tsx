@@ -21,7 +21,7 @@ const body = Inter({
 export const metadata: Metadata = {
   title: "Wedding Documentary Events | Cinematic Wedding Films & Photography",
   description:
-    "Wedding Documentary Events captures real, unscripted love stories — from engagement to reception — through cinematic film and fine-art photography.",
+    "Wedding Documentary Events captures real, unscripted love stories - from engagement to reception - through cinematic film and fine-art photography.",
   openGraph: {
     title: "Wedding Documentary Events | Cinematic Wedding Films & Photography",
     description:
@@ -38,7 +38,7 @@ const jsonLd = {
   "alternateName": "WDE",
   "description": "Wedding Documentary Events captures real, unscripted love stories from engagement to reception through cinematic film and fine-art photography.",
   "url": "https://weddingdocumentaryevents.com",
-  "telephone": "+91-9703332813",
+  "telephone": "+91 95738 24261",
   "priceRange": "₹₹₹",
   "address": {
     "@type": "PostalAddress",
@@ -67,7 +67,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning data-scroll-behavior="smooth">
       <body className={`${display.variable} ${body.variable} font-body`}>
         <script
           type="application/ld+json"
