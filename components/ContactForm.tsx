@@ -14,15 +14,34 @@ export default function ContactForm() {
     setStatus("submitting");
 
     const form = e.currentTarget;
-    const data = Object.fromEntries(new FormData(form).entries());
+    const formData = new FormData(form);
 
-    // TODO: replace with your own API route (e.g. /api/enquiry) or a service
-    // like Formspree / Resend to actually receive these enquiries by email.
-    console.log("Wedding enquiry:", data);
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      date: formData.get("date"),
+      location: formData.get("location"),
+      events: formData.getAll("events"),
+      message: formData.get("message"),
+    };
 
-    await new Promise((res) => setTimeout(res, 800));
-    setStatus("success");
-    form.reset();
+    try {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/enquiry`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!res.ok) throw new Error("Failed to send");
+
+      setStatus("success");
+      form.reset();
+    } catch (err) {
+      console.error("Enquiry submission failed:", err);
+      setStatus("idle");
+      alert("Something went wrong. Please try again or contact us directly.");
+    }
   }
 
   if (status === "success") {
@@ -36,13 +55,13 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-8 max-w-xl">
-     <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
+      <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
         <Field name="name" label="Your Name(s)" placeholder="Amara & Rohan" required />
         <Field name="email" label="Email" type="email" placeholder="you@email.com" />
       </div>
       <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
         <Field name="phone" label="Phone" placeholder="+91 90000 00000" required />
-       <DatePicker name="date" label="Event Date" />
+        <DatePicker name="date" label="Event Date" />
       </div>
       <Field name="location" label="Venue / City" placeholder="Bengaluru, Karnataka" />
 
