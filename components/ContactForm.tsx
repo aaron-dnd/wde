@@ -5,7 +5,7 @@ import Magnetic from "./Magnetic";
 import DatePicker from "./DatePicker";
 
 export default function ContactForm() {
-  const [status, setStatus] = useState<"idle" | "submitting" | "success">(
+  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">(
     "idle"
   );
 
@@ -27,7 +27,7 @@ export default function ContactForm() {
     };
 
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/enquiry`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || ""}/api/enquiry`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
@@ -39,17 +39,42 @@ export default function ContactForm() {
       form.reset();
     } catch (err) {
       console.error("Enquiry submission failed:", err);
-      setStatus("idle");
-      alert("Something went wrong. Please try again or contact us directly.");
+      setStatus("error");
     }
   }
 
   if (status === "success") {
     return (
-      <p className="font-display text-2xl text-cream">
+      <p className="font-display text-2xl text-cream animate-fade-in">
         Thank you - we&apos;ve received your enquiry and will reply by email
         within 48 hours.
       </p>
+    );
+  }
+
+  if (status === "error") {
+    return (
+      <div className="space-y-6 animate-fade-in">
+        <p className="font-display text-2xl text-rose">
+          Oops! Something went wrong while sending your enquiry.
+        </p>
+        <p className="text-stone text-sm leading-relaxed max-w-md">
+          Please check your internet connection and try again. Alternatively, you can reach out directly at:
+          <br />
+          <a
+            href="mailto:weddingdocumentaryevents@gmail.com"
+            className="text-cream hover:text-rose underline transition-colors"
+          >
+            weddingdocumentaryevents@gmail.com
+          </a>
+        </p>
+        <button
+          onClick={() => setStatus("idle")}
+          className="bg-rose text-ink px-8 py-3.5 text-xs tracking-widest2 uppercase hover:bg-cream transition-colors"
+        >
+          Try Again
+        </button>
+      </div>
     );
   }
 
@@ -66,8 +91,9 @@ export default function ContactForm() {
       <Field name="location" label="Venue / City" placeholder="Bengaluru, Karnataka" />
 
       <div>
-        <label className="text-xs tracking-widest2 uppercase text-stone">
+        <label className="text-xs tracking-widest2 uppercase text-stone flex items-center gap-1.5">
           Type of Event
+          <span className="text-stone/50 lowercase font-sans text-[10px] tracking-normal font-normal ml-0.5 normal-case">(optional)</span>
         </label>
         <div className="flex flex-wrap gap-4 mt-3">
           {[
@@ -89,8 +115,9 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label className="text-xs tracking-widest2 uppercase text-stone">
+        <label className="text-xs tracking-widest2 uppercase text-stone flex items-center gap-1.5">
           Tell us about your celebration
+          <span className="text-stone/50 lowercase font-sans text-[10px] tracking-normal font-normal ml-0.5 normal-case">(optional)</span>
         </label>
         <textarea
           name="message"
@@ -128,8 +155,13 @@ function Field({
 }) {
   return (
     <div>
-      <label className="text-xs tracking-widest2 uppercase text-stone">
+      <label className="text-xs tracking-widest2 uppercase text-stone flex items-center gap-1.5">
         {label}
+        {required ? (
+          <span className="text-rose font-bold text-sm leading-none">*</span>
+        ) : (
+          <span className="text-stone/50 lowercase font-sans text-[10px] tracking-normal font-normal ml-0.5 normal-case">(optional)</span>
+        )}
       </label>
       <input
         type={type}

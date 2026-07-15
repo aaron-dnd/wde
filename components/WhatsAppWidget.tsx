@@ -30,7 +30,7 @@ export default function WhatsAppWidget({
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 40, scale: 0.95 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="w-[320px] sm:w-[360px] bg-ink/90 border border-cream/10 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.4)] backdrop-blur-xl overflow-hidden text-cream pointer-events-auto"
+            className="w-[300px] sm:w-[320px] bg-ink-light/95 border border-cream/15 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.4)] backdrop-blur-md overflow-hidden text-cream pointer-events-auto"
           >
             {/* Header: Brand Styling */}
             <div className="bg-gradient-to-r from-ink/95 to-ink-light/80 p-5 flex items-center gap-3 border-b border-cream/5">
@@ -58,11 +58,13 @@ export default function WhatsAppWidget({
             {/* Chat Body */}
             <div className="p-5 flex flex-col gap-4">
               {/* Animated Welcome Message */}
-              <div className="bg-cream/5 border border-cream/5 rounded-xl rounded-tl-none p-3.5 max-w-[90%]">
-                <p className="text-sm leading-relaxed text-cream/90">
-                  👋 Hi! Welcome to **Wedding Documentary Events**!
-                  <br />
-                  How can we help you capture your perfect wedding story?
+              <div className="bg-ink/80 border border-cream/10 rounded-xl rounded-tl-none p-3.5 max-w-[95%] shadow-lg">
+                <p className="text-xs sm:text-sm leading-relaxed text-cream/90">
+                  Welcome to
+                  <span className="block text-[#D8B061] font-display font-semibold text-sm sm:text-base my-1.5 tracking-wide">
+                    Wedding Documentary Events
+                  </span>
+                  Let us help you curate, style, and document your celebration. How can we help you capture your story?
                 </p>
               </div>
 
@@ -81,8 +83,6 @@ export default function WhatsAppWidget({
 
             {/* Footer Statistics */}
             <div className="px-5 py-3.5 bg-ink-light/20 border-t border-cream/5 flex justify-around text-[10px] tracking-wider uppercase text-cream/40">
-              <span>100+ Stories</span>
-              <span>•</span>
               <span>Fast Response</span>
               <span>•</span>
               <span>24/7 Inquiry</span>
@@ -90,6 +90,28 @@ export default function WhatsAppWidget({
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Floating Sticky Phone Button */}
+      <Magnetic strength={25}>
+        <a
+          href="tel:+919573824261"
+          className="flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full shadow-[0_8px_30px_rgba(0,0,0,0.3)] bg-gradient-to-br from-[#D8B061] via-[#B88C4A] to-[#906925] border border-cream/20 hover:scale-105 hover:shadow-[0_8px_35px_rgba(216,176,97,0.5)] transition-all duration-300 pointer-events-auto select-none"
+          aria-label="Call WDE Studio"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="w-6 h-6 sm:w-7 sm:h-7 text-ink"
+          >
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+        </a>
+      </Magnetic>
 
       {/* Floating Sticky Toggle Button */}
       <Magnetic strength={25}>
@@ -115,13 +137,13 @@ export default function WhatsAppWidget({
               <line x1="6" y1="6" x2="18" y2="18" />
             </svg>
           ) : (
-            /* Custom WhatsApp SVG Icon */
+            /* Custom WhatsApp SVG Icon - Official Outline */
             <svg
-              className="w-7 h-7 sm:w-8 sm:h-8 fill-current"
-              viewBox="0 0 24 24"
+              className="w-7 h-7 sm:w-8 sm:h-8 fill-current text-white"
+              viewBox="0 0 448 512"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.45h.007c5.584 0 10.122-4.516 10.126-10.064.002-2.687-1.037-5.211-2.93-7.105C16.634 1.541 14.12 1.5 12.01 1.5c-5.59 0-10.13 4.517-10.134 10.065a9.903 9.903 0 0 0 1.54 5.372L2.37 20.89l4.277-1.12.001-.001-.001.001-.002.001L6.647 19.154zm12.333-5.26c-.328-.164-1.94-.956-2.24-1.066-.3-.11-.518-.165-.736.164-.218.33-.846 1.066-1.037 1.285-.19.22-.382.247-.71.082-1.156-.579-2.062-1.018-2.884-1.782-.7-.652-1.173-1.411-1.31-1.644-.136-.233-.014-.36.11-.482.112-.11.247-.288.37-.432.12-.144.162-.24.243-.4.08-.165.04-.31-.02-.473-.06-.164-.518-1.25-.71-1.706-.186-.45-.37-.389-.517-.396l-.44-.008c-.152 0-.4.057-.61.286-.21.23-.8.78-.8 1.9s.816 2.2 1.026 2.48c.21.28 1.606 2.45 3.89 3.435.544.234 1.05.39 1.41.504.55.174 1.05.15 1.444.09.44-.067 1.94-.793 2.21-1.52.275-.726.275-1.348.193-1.48-.083-.13-.306-.213-.635-.377z" />
+              <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 512l145.4-38.2c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-86.2 22.7 23.1-84-4.4-7c-18.4-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
             </svg>
           )}
         </button>

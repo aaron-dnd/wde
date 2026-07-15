@@ -14,7 +14,7 @@ export default function AboutPage() {
           We started this studio to make every celebration feel
           unmistakably yours
         </h1>
-        <p className="text-stone text-lg leading-relaxed max-w-2xl">
+        <p className="text-stone text-lg leading-relaxed max-w-none text-justify">
           Wedding Documentary Events was founded on a simple belief: décor
           shouldn&apos;t look borrowed from someone else&apos;s wedding. We build every
           concept from scratch - palette, florals, structures, and lighting -
