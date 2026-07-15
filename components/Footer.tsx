@@ -15,7 +15,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="flex gap-16">
+        <div className="flex flex-col sm:flex-row gap-8 sm:gap-16">
           <div>
             <p className="text-xs tracking-widest2 uppercase text-rose mb-4">
               Navigate
@@ -39,7 +39,7 @@ export default function Footer() {
               Contact
             </p>
             <ul className="space-y-2 text-sm text-cream/70">
-              <li>
+              <li className="break-all">
                 <a href="mailto:weddingdocumentaryevents@gmail.com" className="hover:text-cream transition-colors">
                   weddingdocumentaryevents@gmail.com
                 </a>
