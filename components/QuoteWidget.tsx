@@ -98,8 +98,8 @@ export default function QuoteWidget() {
 
       {/* Sliding Form Drawer Panel (Always mounted, slides with parent container) */}
       <div
-        className="w-[300px] bg-ink-light/95 backdrop-blur-md border border-cream/15 rounded-l-none shadow-2xl flex flex-col overflow-hidden pointer-events-auto border-r-0"
-      >
+  className="w-[300px] bg-ink/95 backdrop-blur-md border border-cream/15 rounded-l-none shadow-2xl flex flex-col overflow-hidden pointer-events-auto border-r-0"
+>
         {/* Drawer Header */}
         <div className="bg-gradient-to-r from-ink-light to-ink px-5 py-4 border-b border-cream/10 flex items-start justify-between gap-3">
           <div>
