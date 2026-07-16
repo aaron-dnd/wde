@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SmoothScroll from "@/components/SmoothScroll";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
+import QuoteWidget from "@/components/QuoteWidget";
 
 const display = Playfair_Display({
   subsets: ["latin"],
@@ -79,6 +80,7 @@ export default function RootLayout({
           <main>{children}</main>
           <Footer />
           <WhatsAppWidget />
+          <QuoteWidget />
         </SmoothScroll>
       </body>
     </html>

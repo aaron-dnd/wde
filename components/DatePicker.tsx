@@ -72,8 +72,9 @@ export default function DatePicker({ name, label }: DatePickerProps) {
 
   return (
     <div ref={wrapperRef} className="relative">
-      <label className="text-xs tracking-widest2 uppercase text-stone">
+      <label className="text-xs tracking-widest2 uppercase text-stone flex items-center gap-1.5">
         {label}
+        <span className="text-stone/50 lowercase font-sans text-[10px] tracking-normal font-normal ml-0.5 normal-case">(optional)</span>
       </label>
 
       <input type="hidden" name={name} value={isoValue} />

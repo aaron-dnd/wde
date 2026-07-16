@@ -51,6 +51,7 @@ export default function Directors() {
                   src={d.image}
                   alt={d.name}
                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 />
               </div>

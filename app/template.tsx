@@ -12,7 +12,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     // Check if this is the user's first time entering the site during this session
     const hasEntered = sessionStorage.getItem("has_entered");
-    
+
     if (!hasEntered) {
       sessionStorage.setItem("has_entered", "true");
       setShowFullSequence(true);
@@ -50,12 +50,12 @@ export default function Template({ children }: { children: React.ReactNode }) {
                 opacity: { times: [0, 0.2, 0.8, 1], duration: 2.5, ease: "easeInOut" }
               }}
             >
-              <div className="relative h-48 w-64 sm:h-64 sm:w-96 md:h-80 md:w-[36rem]">
+              <div className="relative w-full max-w-[360px] h-56 sm:max-w-none sm:w-[32rem] sm:h-80 md:w-[48rem] md:h-[28rem]">
                 <Image
                   src="/wde-logo-final.png"
                   alt="WDE Loading Logo"
                   fill
-                  sizes="(max-width: 640px) 256px, (max-width: 768px) 384px, 576px"
+                  sizes="(max-width: 640px) 360px, (max-width: 768px) 512px, 768px"
                   className="object-contain"
                   priority
                 />
@@ -74,12 +74,12 @@ export default function Template({ children }: { children: React.ReactNode }) {
                 opacity: { times: [0, 0.2, 0.8, 1], duration: 2.5, delay: 2.2, ease: "easeInOut" }
               }}
             >
-              <div className="relative h-48 w-64 sm:h-64 sm:w-96 md:h-80 md:w-[36rem]">
+              <div className="relative w-full max-w-[360px] h-56 sm:max-w-none sm:w-[32rem] sm:h-80 md:w-[48rem] md:h-[28rem]">
                 <Image
                   src="/wde-logo-3.png"
                   alt="WDE Brand Logo"
                   fill
-                  sizes="(max-width: 640px) 256px, (max-width: 768px) 384px, 576px"
+                  sizes="(max-width: 640px) 360px, (max-width: 768px) 512px, 768px"
                   className="object-contain"
                   priority
                 />
@@ -99,16 +99,17 @@ export default function Template({ children }: { children: React.ReactNode }) {
               initial={{ rotateY: 180, scale: 0.5, opacity: 0 }}
               animate={{ rotateY: 0, scale: 1, opacity: 1 }}
               transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
-              className="relative h-48 w-64 sm:h-64 sm:w-96 md:h-80 md:w-[36rem] perspective-1000"
             >
-              <Image
-                src="/wde-logo-final.png"
-                alt="WDE Loading Logo"
-                fill
-                sizes="(max-width: 640px) 256px, (max-width: 768px) 384px, 576px"
-                className="object-contain"
-                priority
-              />
+              <div className="relative w-full max-w-[360px] h-56 sm:max-w-none sm:w-[32rem] sm:h-80 md:w-[48rem] md:h-[28rem] perspective-1000">
+                <Image
+                  src="/wde-logo-final.png"
+                  alt="WDE Loading Logo"
+                  fill
+                  sizes="(max-width: 640px) 360px, (max-width: 768px) 512px, 768px"
+                  className="object-contain"
+                  priority
+                />
+              </div>
             </motion.div>
           </motion.div>
         )}
