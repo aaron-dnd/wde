@@ -44,6 +44,7 @@ export default function QuoteWidget() {
     const data = {
       name: formData.get("name"),
       phone: formData.get("phone"),
+      email: formData.get("email"),
       eventType: formData.get("eventType"),
       message: formData.get("message"),
       source: "Free Quote Widget",
@@ -187,6 +188,20 @@ export default function QuoteWidget() {
                   name="phone"
                   required
                   placeholder="Enter phone number"
+                  className="w-full bg-ink/50 border border-cream/15 rounded-md px-3.5 py-2.5 text-xs text-cream focus:outline-none focus:border-[#D8B061] placeholder-stone/40"
+                />
+              </div>
+
+              {/* Email field */}
+              <div className="flex flex-col">
+                <label className="text-[10px] tracking-widest uppercase text-stone/80 mb-1.5">
+                  Email <span className="text-rose">*</span>
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="you@email.com"
                   className="w-full bg-ink/50 border border-cream/15 rounded-md px-3.5 py-2.5 text-xs text-cream focus:outline-none focus:border-[#D8B061] placeholder-stone/40"
                 />
               </div>

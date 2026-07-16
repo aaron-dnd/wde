@@ -82,7 +82,7 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-8 max-w-xl">
       <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
         <Field name="name" label="Your Name(s)" placeholder="Amara & Rohan" required />
-        <Field name="email" label="Email" type="email" placeholder="you@email.com" />
+        <Field name="email" label="Email" type="email" placeholder="you@email.com" required/>
       </div>
       <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
         <Field name="phone" label="Phone" placeholder="+91 90000 00000" required />
