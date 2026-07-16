@@ -8,7 +8,7 @@ export default function ProcessPage() {
       <section className="container-wide pb-16">
         <p className="section-label mb-4">
           <span className="eyebrow-line" />
-          How It Works
+          Process
         </p>
         <h1 className="font-display text-3xl md:text-5xl text-cream max-w-none">
           Simple, transparent, and built around your timeline
