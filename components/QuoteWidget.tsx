@@ -51,7 +51,7 @@ export default function QuoteWidget() {
     };
 
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || ""}/api/enquiry`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/enquiry`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
