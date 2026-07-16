@@ -166,51 +166,51 @@ export default function QuoteWidget() {
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
               {/* Name field */}
               <div className="flex flex-col">
-                <label className="text-[10px] tracking-widest uppercase text-stone/80 mb-1.5">
-                  Your Name <span className="text-rose">*</span>
-                </label>
+               <label className="text-[10px] tracking-widest uppercase text-cream/90 mb-1.5">
+  Your Name <span className="text-rose">*</span>
+</label>
                 <input
-                  type="text"
-                  name="name"
-                  required
-                  placeholder="Enter your name"
-                  className="w-full bg-ink/50 border border-cream/15 rounded-md px-3.5 py-2.5 text-xs text-cream focus:outline-none focus:border-[#D8B061] placeholder-stone/40"
-                />
+  type="text"
+  name="name"
+  required
+  placeholder="Enter your name"
+  className="w-full bg-ink/50 border border-cream/15 rounded-md px-3.5 py-2.5 text-xs text-cream focus:outline-none focus:border-[#D8B061] placeholder-stone/70"
+/>
               </div>
 
               {/* Phone field */}
               <div className="flex flex-col">
-                <label className="text-[10px] tracking-widest uppercase text-stone/80 mb-1.5">
-                  Phone Number <span className="text-rose">*</span>
-                </label>
-                <input
-                  type="tel"
-                  name="phone"
-                  required
-                  placeholder="Enter phone number"
-                  className="w-full bg-ink/50 border border-cream/15 rounded-md px-3.5 py-2.5 text-xs text-cream focus:outline-none focus:border-[#D8B061] placeholder-stone/40"
-                />
+                <label className="text-[10px] tracking-widest uppercase text-cream/90 mb-1.5">
+  Phone Number <span className="text-rose">*</span>
+</label>
+               <input
+  type="tel"
+  name="phone"
+  required
+  placeholder="Enter phone number"
+  className="w-full bg-ink/50 border border-cream/15 rounded-md px-3.5 py-2.5 text-xs text-cream focus:outline-none focus:border-[#D8B061] placeholder-stone/70"
+/>
               </div>
 
               {/* Email field */}
               <div className="flex flex-col">
-                <label className="text-[10px] tracking-widest uppercase text-stone/80 mb-1.5">
-                  Email <span className="text-rose">*</span>
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  required
-                  placeholder="you@email.com"
-                  className="w-full bg-ink/50 border border-cream/15 rounded-md px-3.5 py-2.5 text-xs text-cream focus:outline-none focus:border-[#D8B061] placeholder-stone/40"
-                />
+              <label className="text-[10px] tracking-widest uppercase text-cream/90 mb-1.5">
+  Email <span className="text-rose">*</span>
+</label>
+               <input
+  type="email"
+  name="email"
+  required
+  placeholder="you@email.com"
+  className="w-full bg-ink/50 border border-cream/15 rounded-md px-3.5 py-2.5 text-xs text-cream focus:outline-none focus:border-[#D8B061] placeholder-stone/70"
+/>
               </div>
 
               {/* Event Type Select */}
               <div className="flex flex-col">
-                <label className="text-[10px] tracking-widest uppercase text-stone/80 mb-1.5">
-                  Event Type <span className="text-stone/40 font-sans lowercase">(optional)</span>
-                </label>
+               <label className="text-[10px] tracking-widest uppercase text-cream/90 mb-1.5">
+  Event Type <span className="text-stone/70 font-sans lowercase">(optional)</span>
+</label>
                 <select
                   name="eventType"
                   className="w-full bg-ink/50 border border-cream/15 rounded-md px-3.5 py-2.5 text-xs text-cream focus:outline-none focus:border-[#D8B061] appearance-none"
@@ -226,15 +226,15 @@ export default function QuoteWidget() {
 
               {/* Message field */}
               <div className="flex flex-col">
-                <label className="text-[10px] tracking-widest uppercase text-stone/80 mb-1.5">
-                  Event Description <span className="text-stone/40 font-sans lowercase">(optional)</span>
-                </label>
-                <textarea
-                  name="message"
-                  placeholder="Briefly describe your event details..."
-                  rows={3}
-                  className="w-full bg-ink/50 border border-cream/15 rounded-md px-3.5 py-2.5 text-xs text-cream focus:outline-none focus:border-[#D8B061] resize-none placeholder-stone/40"
-                />
+           <label className="text-[10px] tracking-widest uppercase text-cream/90 mb-1.5">
+  Event Description <span className="text-stone/70 font-sans lowercase">(optional)</span>
+</label>
+              <textarea
+  name="message"
+  placeholder="Briefly describe your event details..."
+  rows={3}
+  className="w-full bg-ink/50 border border-cream/15 rounded-md px-3.5 py-2.5 text-xs text-cream focus:outline-none focus:border-[#D8B061] resize-none placeholder-stone/70"
+/>
               </div>
 
               {/* Submit Button */}
@@ -247,7 +247,7 @@ export default function QuoteWidget() {
                 <ChevronRight size={14} />
               </button>
 
-              <p className="text-center text-[10px] text-stone/50 mt-1">
+              <p className="text-center text-[10px] text-stone/70 mt-1">
                 Or call us:{" "}
                 <a
                   href="tel:+919573824261"
