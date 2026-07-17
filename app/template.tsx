@@ -95,22 +95,22 @@ export default function Template({ children }: { children: React.ReactNode }) {
             animate={{ opacity: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
           >
-            <motion.div
-              initial={{ rotateY: 180, scale: 0.5, opacity: 0 }}
-              animate={{ rotateY: 0, scale: 1, opacity: 1 }}
-              transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
-            >
-              <div className="relative w-full max-w-[360px] h-56 sm:max-w-none sm:w-[32rem] sm:h-80 md:w-[48rem] md:h-[28rem] perspective-1000">
-                <Image
-                  src="/wde-logo-final.png"
-                  alt="WDE Loading Logo"
-                  fill
-                  sizes="(max-width: 640px) 360px, (max-width: 768px) 512px, 768px"
-                  className="object-contain"
-                  priority
-                />
-              </div>
-            </motion.div>
+           <motion.div
+  initial={{ rotateY: 180, scale: 0.5, opacity: 0 }}
+  animate={{ rotateY: 0, scale: 1, opacity: 1 }}
+  transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
+>
+  <div className="relative h-48 w-64 sm:h-64 sm:w-96 md:h-80 md:w-[36rem] perspective-1000">
+    <Image
+      src="/wde-logo-final.png"
+      alt="WDE Loading Logo"
+      fill
+      sizes="(max-width: 640px) 256px, (max-width: 768px) 384px, 576px"
+      className="object-contain"
+      priority
+    />
+  </div>
+</motion.div>
           </motion.div>
         )}
       </AnimatePresence>
