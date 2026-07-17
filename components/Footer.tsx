@@ -55,9 +55,13 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="container-wide mt-12 pt-6 border-t border-cream/10 text-xs text-stone flex flex-col sm:flex-row justify-between gap-4">
-        <div className="flex flex-wrap gap-4 sm:gap-6">
+     <div className="container-wide mt-12 pt-6 border-t border-cream/10 text-xs text-stone flex flex-col sm:flex-row justify-between items-center sm:items-start gap-4 text-center sm:text-left">
+        <div className="flex flex-wrap justify-center sm:justify-start gap-4 sm:gap-6">
           <span>© {new Date().getFullYear()} Wedding Documentary Events. All Rights Reserved.</span>
+           <Link href="/privacy" className="hover:text-cream transition-colors">
+            Privacy Policy
+          </Link>
+           <span className="text-stone/40">|</span>
           <Link href="/terms" className="hover:text-cream transition-colors">
             Terms & Conditions
           </Link>
