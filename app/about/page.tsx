@@ -14,16 +14,16 @@ export default function AboutPage() {
           We started this studio to make every celebration feel
           unmistakably yours
         </h1>
-        <p className="text-stone text-lg leading-relaxed max-w-none text-justify">
-          Wedding Documentary Events was founded on a simple belief: décor
-          shouldn&apos;t look borrowed from someone else&apos;s wedding. We build every
-          concept from scratch - palette, florals, structures, and lighting -
-          around your families, your venue, and the story you&apos;re
-          celebrating. From haldi to reception, birthdays to corporate
-          stages, we treat every function as its own design problem worth
-          solving properly. The result isn&apos;t a template dressed up - it&apos;s a
-          space built for exactly one celebration: yours.
-        </p>
+        <p className="text-stone text-lg leading-relaxed max-w-none text-left md:text-justify">
+  Wedding Documentary Events was founded on a simple belief: décor
+  shouldn&apos;t look borrowed from someone else&apos;s wedding. We build every
+  concept from scratch - palette, florals, structures, and lighting -
+  around your families, your venue, and the story you&apos;re
+  celebrating. From haldi to reception, birthdays to corporate
+  stages, we treat every function as its own design problem worth
+  solving properly. The result isn&apos;t a template dressed up - it&apos;s a
+  space built for exactly one celebration: yours.
+</p>
       </section>
       <Directors />
       <Pillars />
