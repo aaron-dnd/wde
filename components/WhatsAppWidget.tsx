@@ -21,7 +21,7 @@ export default function WhatsAppWidget({
   };
 
   return (
-    <div className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-[99999] flex flex-col items-end gap-4">
+    <div className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-[9999] flex flex-col items-end gap-4">
       {/* Interactive Chat Window */}
       <AnimatePresence>
         {isOpen && (
