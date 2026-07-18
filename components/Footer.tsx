@@ -49,6 +49,11 @@ export default function Footer() {
                   +91 95738 24261
                 </a>
               </li>
+               <li>
+                <a href="tel:+918074795696" className="hover:text-cream transition-colors">
+                  +91 80747 95696
+                </a>
+              </li>
               <li>Vijayawada, Andhra Pradesh</li>
             </ul>
           </div>
